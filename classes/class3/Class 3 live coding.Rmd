@@ -1,0 +1,85 @@
+---
+title: "Live coding"
+author: "Regitze"
+date: "2024-03-01"
+output: html_document
+---
+
+```{r}
+library(pacman)
+pacman::p_load(tidyverse, ggplot2)
+```
+
+```{r}
+#collect code from class
+```
+
+```{r for loop}
+for(number in 1:16) {
+  print(paste("The current number is:", number))
+  squared_number <- number ^ 2
+  print(paste("Which makes the squared number is:", squared_number))
+}
+```
+```{r while loop}
+counter <- 1
+
+while (counter <= 25) {
+  print(paste("The counter is currently:", counter))
+  counter <- counter + 1
+}
+```
+```{r if else}
+number <- 9
+if (number > 0) {
+  print("positive number")
+} else if (number < 0) {
+  print("negative number")
+} else{
+  print("zero")
+}
+```
+
+```{r number checker function}
+list_of_numbers <- c(9, -5, 6, 1234, 0)
+
+for (number in list_of_numbers) {
+  if (number > 0) {
+    print("positive number")
+  } else if (number < 0) {
+    print("negative number")
+  } else{
+    print("zero")
+  }
+}
+
+number_checker <- function(list_of_numbers_2){
+  for (number in list_of_numbers_2) {
+  if (number > 0) {
+    print("positive number")
+  } else if (number < 0) {
+    print("negative number")
+  } else{
+    print("zero")
+  }
+}
+}
+
+number_list=c(1,2,34,-2,3,4,543,9-8)
+number_checker(number_list)
+number_checker(c(1,2,34,-2,3,4,543,9-8))
+```
+
+```{r calculate area function}
+calculate_area <- function(width,length_){
+  area <- width*length_
+  return(area)
+}
+
+calculate_area(3,4)
+```
+
+```{r}
+
+```
+
